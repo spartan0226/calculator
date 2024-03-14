@@ -1,7 +1,10 @@
 package com.example.myapplication
 
 fun main() {
-    val calculator = Calculator()
+    val plus_calc = PlusOp()
+    val minus_calc = MinusOp()
+    val multi_calc = MultiOp()
+    val div_calc = DivOp()
 
     while(true) {
         println("[1]덧셈 [2]뺄셈 [3]곱셈 [4]나눗셈 [5]나머지 [-1]종료")
@@ -19,19 +22,16 @@ fun main() {
 
         when(choice) {
             1 -> {
-                calculator.plusOp(num1, num2)
+                plus_calc.basicOps(num1, num2)
             }
             2 -> {
-                calculator.minusOp(num1, num2)
+                minus_calc.basicOps(num1, num2)
             }
             3 -> {
-                calculator.multiOp(num1, num2)
+                multi_calc.basicOps(num1, num2)
             }
             4 -> {
-                calculator.divOp(num1, num2)
-            }
-            5 -> {
-                calculator.modOp(num1, num2)
+                div_calc.basicOps(num1, num2)
             }
         }
     }
