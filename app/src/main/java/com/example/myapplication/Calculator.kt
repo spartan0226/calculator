@@ -16,7 +16,7 @@ class Calculator {
         println("곱셈 결과값은 ${result}입니다.")
     }
 
-    fun divOp(num1: Int, num2: Int) {
+    fun divOp(num1:Int, num2: Int) {
         val result = num1 / num2
         println("나눗셈 결과값은 ${result}입니다.")
     }
