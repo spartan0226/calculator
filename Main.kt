@@ -7,7 +7,7 @@ fun main() {
     val div_calc = DivOp()
 
     while(true) {
-        println("[1]덧셈 [2]뺄셈 [3]곱셈 [4]나눗셈 [5]나머지 [-1]종료")
+        println("[1]덧셈 [2]뺄셈 [3]곱셈 [4]나눗셈 [-1]종료")
         val choice = readLine()!!.toInt()
 
         if(choice == -1) {
